@@ -1,0 +1,10 @@
+.IList-data.email {width: 23%;}
+
+.IList-data.mob {
+    width: 16%;
+}
+
+.IList-data.status {
+    width: 12%;
+    font-family: auto;
+}

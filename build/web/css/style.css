@@ -1,0 +1,740 @@
+*{
+	margin:0;
+	padding:0;
+	outline: 0;
+}
+body {background-image: url(img/back.jpg);background-size: 100% 100%;background-attachment: fixed;}
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar{
+	display: flex;
+	position: fixed;
+	top: 0;
+	/* border: 2px solid rgb(233, 10, 10); */
+	height: 60px;
+	width: 100%;
+	z-index: 89;
+	box-shadow: 0px 4px 4px rgb(218, 218, 218);
+	background-color: white;
+	transition-property: all;
+	transition-duration: 2s;
+}
+.profile-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.Profile {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-logo {
+    margin: 10px 0;
+    width: 150px;
+    background-color: white;
+    height: 150px;
+    border-radius: 150px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px black, 1px 5px 0 orange;
+}
+
+.profile-name {
+    font-size: xx-large;
+    font-family: monospace;
+    padding: 10px 0;
+    text-shadow: 2px 2px 0 black, 3px 3px 0 orange;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.profile-Email {
+    padding: 10px 0;
+}
+
+.profile-Mobile {
+    padding: 10px 0;
+}
+
+.ham {
+    padding: 20px 10px 10px 10px;
+    color: blue;
+    cursor: pointer;
+}
+button#myBtn {
+    position: fixed;
+    bottom: 158px;
+    right: 23px;
+    padding: 8px;
+    background-color: rgb(3 255 58 / 92%);
+    outline: 0;
+    z-index: 105;
+    cursor: pointer;
+    border: 0;
+    display:none;
+    border-radius: 75px;
+    font-size: 22px;
+    font-family: fantasy;
+    font-weight: 900;
+    color: white;
+    margin-bottom: -137px;
+}
+.stickyopp button#myBtn {
+    margin-bottom: 0px;
+}
+
+
+.logo {
+    padding: 10px 0 0 10px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: white;
+}
+.main {
+    width: 100%;
+    margin-top: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.contain {
+    width: 41%;
+    height: 429px;
+    background-color: white;
+    box-shadow: 0 0 10px;
+    border-radius: 3px;
+}
+.progressbar {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 97;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    background-color: #ffffff8f;
+}
+
+.progressbarper {
+    height: 3px;
+    background-color: rgb(0 198 255);
+}
+
+.heading {
+    width: 100%;
+    padding: 30px 0 30px 0;
+    align-items: center;
+    text-align: center;
+    font-family: serif;
+    font-weight: 900;
+    font-size: 23px;
+    color: rgb(119 0 255);
+}
+.select {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.select select {
+    width: 90%;
+    height: 36px;
+    color: blue;
+    font-family: initial;
+    font-weight: bolder;
+    border: 0;
+    box-shadow: 0 0 3px blue;
+    border-radius: 4px;
+}
+.buttondiv {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 22px;
+}
+
+.button {
+    box-shadow: 0 0 3px blue;
+    color: white;
+    background-color: blue;
+    font-family: inherit;
+    font-weight: 900;
+    padding: 10px;
+    width: 31px;
+    cursor: pointer;
+    border-radius: 11px;
+}
+.logo img {
+    height: 74%;
+}
+.card1 {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    height: 289px;
+    transition-property: all;
+    transition-duration: 2s;
+    padding: 53px 0;
+}
+.card1out {
+    background-image: url(img/img1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 372px;
+	    
+}
+.card1text {
+    text-align: center;
+    background: rgb(232 228 228 / 48%);
+    padding: 20px 40px 20px 40px;
+    color: rgb(255 255 255);
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 90px 8%;
+    text-shadow: 0px 4px 23px white;
+}
+.getmyenotes {
+    height: 53px;
+    background-color: rgb(3 255 58 / 92%);
+    padding: 19px;
+    text-align: center;
+    box-shadow: 0 0 5px rgb(3 255 58 / 92%);
+    color: white;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: sans-serif;
+    width: 100%;
+    font-weight: 900;
+    align-items: center;
+    margin: 21px 0;
+}
+.getmyenotes arrow {
+    float: right;
+    font-family: fantasy;
+    font-size: 37px;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(3 255 58 / 92%);
+    font-size: 50px;
+    margin-top: 9px;
+    color: rgb(3 255 58 / 92%);
+    border-radius: 31px;
+}
+.card2 {
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+    flex-wrap: wrap;
+    background-color: rgb(255 255 255 / 85%);
+    justify-content: center;
+}
+
+.card2image img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.card2image {
+    width: 158px;
+    margin: 0% 10%;
+}
+
+.card2content {width: 37%;margin: 2% 8%;text-align: center;font-size: initial;font-family: monospace;color: rgb(15 0 253);font-weight: bold;}
+.cardsliderline {
+    width: 100%;
+    background-color: rgb(255 255 255 / 0%);
+    margin: -26px 0;
+    padding: 1px 0;
+    z-index: 0;
+    overflow: hidden;
+    position: absolute;
+}
+.line {
+    width: 100%;
+    height: 4px;
+    margin: 9px 0;
+	transition-property: all;
+    transition-duration: 0.5s;
+}
+.line.line1 {
+    background-color: rgb(249 10 10);
+}
+
+.line.line2 {
+    background-color: rgb(0 67 255);
+}
+
+.line.line3 {
+    background: rgb(80 253 9);
+}
+.login {
+    cursor: pointer;
+    font-size: 17px;
+    color: blue;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    display: flex;
+    padding:  11px 16px 0 0;
+}
+.login:hover {
+	color:rgb(3 255 58 / 92%);
+}
+.login i {
+    font-size: 30px;
+}
+.loginName {
+    padding: 7px 7px;
+    width: max-content;
+}
+
+.footer {
+    padding:  15px 0;
+    background-color: rgb(9 5 255 / 81%);
+    align-content: center;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: aliceblue;
+    line-height: 25px;
+}
+.card3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: g;
+}
+
+.card3 {
+    background: linear-gradient(to right, #ccffff70 0%, #ffccffb0 100%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 17px 0;
+}
+.modelback {
+    width: auto;
+    position: fixed;
+    top :0;
+    height: 101vh;
+    background-color: #ffffff8a;
+    margin-top: -3px;
+    margin-left: -100vw;
+    cursor: pointer;
+    z-index: 132;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.model {
+    width: 30%;
+    cursor: auto;
+    color: white;
+    margin-top: 63px;
+    height: -webkit-fill-available;
+    padding-top: 15px;
+    background: rgb(0 0 0 / 78%);
+}
+.link {
+    padding: 14px 11px;
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    margin: 10px 9px;
+    text-decoration-line: initial;
+    background-color: rgb(0 0 0 / 66%);
+}
+.link:hover{
+	
+background-color: white;
+	
+color: black;
+}
+.link linkicon {
+    margin: 0 9px;
+}
+svg.svg-inline--fa.fa-user-circle.fa-w-16 {
+    width: auto;
+    height: 37px;
+}svg.svg-inline--fa.fa-user-circle.fa-w-16 {}
+
+.Togglediv {
+    margin-top: -60px;
+    background-color: rgb(255 255 255 / 63%);
+    width: 100%;
+    height: 62px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.toggleop {
+    padding: 4px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: rgb(255 255 255);
+}
+
+.toggle {
+    width: 40px;
+    background-color: white;
+    height: 15px;
+    margin: 0 10px;
+    border-radius: 9px;
+    box-shadow: 0 0 8px white;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.togglebut {
+    height: 100%;
+    background-color: rgb(0 196 255);
+    width: 22px;
+    border-radius: 65px;
+    box-shadow: 0 0 5px rgb(0 196 255);
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255 255 255 / 68%);
+}
+
+.loader img {width: 100px;height: 100px;}
+
+
+.Field {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.fieldop {
+    width: 100%;
+    background-color: rgb(255 255 255 / 12%);
+    position: absolute;
+    height: 229px;
+    box-shadow: inset 0 -14px 20px rgb(255 255 255 / 12%);
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+}
+
+.getmyenotesdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 7%;
+}
+.right {
+    margin-left: 70%;
+}
+
+.button1 {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background: #ffffff82;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.button1 div {
+    width: 40%;
+    padding: 10px;
+    border-bottom: 2px solid orange;
+    border-right: 5px solid transparent;
+}
+
+.button1 div:hover {
+    border-right: 5px solid orange;
+}
+.right-Con {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-Condiv {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.right-Condiv-Heading {
+    text-align: center;
+    width: 100%;
+    font-size: larger;
+    padding: 10px 0;
+    background-color: #00000047;
+}
+
+.right-Condiv-field {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 95%;
+}
+
+.right-Condiv-fieldName {
+    text-align: left;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.right-Condiv-fieldInput {
+    width: 100%;
+    padding: 5px 0;
+    height: 30px;
+}
+.searchbar {
+    padding: 14px 39px;
+    display: flex;
+    justify-content: flex-end;
+    width: 42%;
+}
+
+input[type="text"], input[type="password"],input[type="tel"],input[type="email"], input[type="button"], input[type="submit"], input[type="file"], textarea {
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+    border-radius: 7px;
+    background-color: #ffffffed;
+    padding: 5px;
+}
+
+input[type="Button"], input[type="submit"] {
+    background-color: rgb(3 255 58 / 92%);
+    font-family: math;
+    font-size: x-large;
+    color: white;
+    cursor: pointer;
+    height: fit-content;
+}
+input[type="radio"] {
+    margin: 10px;
+}
+
+.Notes-Image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card31 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #ffffffc2;
+    margin: 5px;
+    padding: 10px 0;
+}
+
+.card31-heading {
+    background: linear-gradient(1deg, #9ef78d, transparent);
+    padding: 10px;
+    font-family: serif;
+    font-size: larger;
+    font-weight: 900;
+    color: #822d0d;
+}
+
+.card31-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Notes-card {
+    width: 29%;
+    background: white;
+    margin: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 1px 3px #0000006b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Notes-Name {
+    padding: 10px 0;
+    font-size: large;
+    font-weight: bolder;
+    color: blue;
+    text-shadow: 0px 0px 2px #00000038;
+}
+
+.Notes-Image {
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.Notes-Provider {
+    font-family: system-ui;
+    padding: 5px 0;
+    font-size: unset;
+    color: #0000008f;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.Notes-card:hover {
+    box-shadow: 2px 1px 3px black;
+}
+
+.Notes-decription {
+    font-size: small;
+    color: #0000005e;
+    font-family: cursive;
+    text-align: justify;
+}
+.dashbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: -webkit-fill-available;
+    cursor: pointer;
+}
+.searchbar i.fas.fa-search {
+    margin-left: -23px;
+    margin-top: 8px;
+}
+
+.searchbar input {
+    width: 100%;
+    padding: 10px;
+outline: 1px solid;}
+
+form {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.msg {
+    padding: 45px 10px;
+    font-size: xx-large;
+    background-color: #f8fbfaad;
+    height: 100vh;
+    text-align: center;
+    color: blueviolet;
+    /*text-shadow: 3px 2px 1px white;*/
+}
+
+.card3.serachcard {
+    zoom: 62%;
+}
+
+.serachcard .card31 .card31-content .Notes-card {
+    width: 17%;
+}
+@media only screen and (max-width: 910px) {
+.searchbar {
+    width: 25%;
+}
+.Notes-card {
+    width: 42%;
+}
+	.card1 {
+    padding: 45px 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.getmyenotes {
+    margin: 10px 9px;
+    width: 54%;
+}
+.card1text {
+    width: 168px;
+    margin: 2px 0;
+}
+.getmyenotesdiv {
+    width: 100%;
+    margin: 0;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.card1out {
+    background-size: 100% 100%;
+}
+.Notes-card {
+    width: 90%;
+}
+.model {width: 100%;margin-left: 0;overflow: scroll;}
+.searchbar {
+    width: 25%;
+    padding: 14px 11px;
+}
+.loginName {
+    display: none;
+}
+.logo {
+    padding: 15px  0 15px 0px;
+}
+.card2content {
+    width: 80%;
+}
+.getmyenotes {
+    text-align: center;
+    width: 67%;
+    padding: 9px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+}
+@media only screen and (max-width: 375px) {
+.searchbar {
+    display: none;
+}
+}

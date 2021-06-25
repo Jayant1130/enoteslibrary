@@ -1,0 +1,59 @@
+.enotesdetail {
+    padding: 20px;
+    background-color: #ffffffd1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.enotesdetail-Name {
+    font-family: cursive;
+    font-size: xx-large;
+    padding: 10px 0;
+    font-weight: bolder;
+    color: blue;
+    text-shadow: 1px 2px 6px white,1px 2px 6px white,1px 2px 6px white,1px 2px 6px white,1px 2px 6px white,1px 2px 6px white;
+}
+
+.enotesdetail-Description {
+    padding: 10px 0;
+    font-family: monospace;
+    text-shadow: 1px 1px 1px black,2px 3px 3px white,2px 3px 3px white,2px 3px 3px white,2px 3px 3px white,2px 3px 3px white;
+}
+
+.enotesdetail-p1 {
+    width: 48%;
+}
+
+.enotesdetail-p2 {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.enotesdetail-optionView {
+    background-color: #f7c024; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	cursor:pointer;
+}
+
+.enotesdetail-optionDownload {
+    background-color: #2be433; /* Green */
+	cursor:pointer;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
